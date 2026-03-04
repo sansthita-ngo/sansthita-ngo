@@ -1,35 +1,79 @@
 export default function Footer() {
+  /*
+    Footer component for the website.
+    Contains quick navigation links, contact details
+    and copyright information.
+  */
+
   return (
+    <footer className="bg-gray-900 text-gray-300 py-12">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+        {/* Organization Info */}
+        <div>
+          <h3 className="text-white text-xl font-semibold">Sansthita </h3>
 
-    <footer className="bg-gray-900 text-white mt-20">
+          <p className="mt-3 text-sm leading-relaxed">
+            A registered non-profit organization dedicated to supporting
+            vulnerable communities, empowering women and helping underprivileged
+            children through education, awareness and community initiatives.
+          </p>
+        </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-10">
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-white font-semibold mb-3">Quick Links</h3>
 
-        <h2 className="text-xl font-semibold mb-4">
-          Sansthita
-        </h2>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="/" className="hover:text-white">
+                Home
+              </a>
+            </li>
 
-        <p className="text-gray-300 mb-6 max-w-xl">
-          Sansthita is a registered non-profit organization working to
-          support vulnerable communities, empower women and promote
-          education and dignity in society.
-        </p>
+            <li>
+              <a href="/gallery" className="hover:text-white">
+                Gallery
+              </a>
+            </li>
 
-        <p className="text-gray-400 text-sm">
-          B 23/1 Kalindi Housing Estate, Lake Town, Kolkata 700089
-        </p>
+            <li>
+              <a href="/partners" className="hover:text-white">
+                Partners
+              </a>
+            </li>
 
-        <p className="text-gray-400 text-sm mt-2">
-          Email: sansthita2025.kalindi@gmail.com
-        </p>
+            <li>
+              <a href="/supporters" className="hover:text-white">
+                Supporters
+              </a>
+            </li>
+          </ul>
+        </div>
 
+        {/* Contact */}
+        <div>
+          <h3 className="text-white font-semibold mb-3">Contact</h3>
+
+          <p className="text-sm leading-relaxed">
+            B 23/1, Kalindi Housing Estate
+            <br />
+            Lake Town, Kolkata – 700089
+          </p>
+
+          <p className="mt-2 text-sm">
+            <a href="tel:9903507605" className="hover:underline">
+              Mobile - +91-9903507605
+            </a>
+          </p>
+
+          <p className="text-sm">Email: sansthita2025.kalindi@gmail.com</p>
+        </div>
       </div>
 
-      <div className="text-center text-gray-500 text-sm pb-6">
-        © {new Date().getFullYear()} Sansthita NGO
+      {/* Bottom Bar */}
+      <div className="text-center text-sm text-gray-500 mt-10 border-t border-gray-700 pt-6">
+        © {new Date().getFullYear()} Sansthita. All rights reserved.
       </div>
-
     </footer>
-
-  )
+  );
 }

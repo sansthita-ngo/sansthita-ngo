@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import SectionTitle from "@/components/SectionTitle";
+import ImpactSection from "@/components/ImpactSection";
 import StoryCard from "@/components/StoryCard";
+import SupportSection from "@/components/SupportSection";
 
 /*
   Homepage Component
@@ -39,7 +41,7 @@ export default function HomePage() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-6xl mx-auto px-6">
           <SectionTitle
-            title="What We Do"
+            title="What We Do "
             subtitle="Sansthita works across multiple areas to support vulnerable communities and empower individuals."
           />
 
@@ -142,7 +144,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           {/* Section Title */}
           <SectionTitle
-            title="Stories of Hope"
+            title="Stories of Hope 🕊️"
             subtitle="Real lives changed through the support and compassion of Sansthita."
           />
 
@@ -176,7 +178,7 @@ export default function HomePage() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-6xl mx-auto px-6">
           <SectionTitle
-            title="Our Activities"
+            title="Our Activities "
             subtitle="A glimpse of our work and community programs."
           />
 
@@ -237,7 +239,14 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Gallery Button */}
+          {/* ================= GALLERY CALL-TO-ACTION ================= */}
+          {/* 
+            This button directs users to the full gallery page.
+            The homepage only shows a preview of activities,
+            so this link allows visitors to explore all photos
+            from Sansthita's events, programs and initiatives.
+          */}
+
           <div className="text-center mt-12">
             <a
               href="/gallery"
@@ -248,6 +257,24 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ================= IMPACT SECTION ================= */}
+      {/* 
+          Displays key statistics about Sansthita's impact
+          such as students supported, women assisted and
+          community programs organized. This helps visitors
+          quickly understand the scale of the NGO's work.
+        */}
+      <ImpactSection />
+      {/* ================= SUPPORT SECTION ================= */}
+      {/*
+          This section provides visitors with essential contact
+          and support information for Sansthita. It encourages
+          individuals and organizations to contribute, collaborate
+          or reach out to the NGO for assistance, donations or
+          community initiatives.
+        */}
+      <SupportSection />
     </main>
   );
 }

@@ -19,6 +19,8 @@ export default function Navbar() {
           <Link href="/about">About</Link>
           <Link href="/work">Our Work</Link>
           <Link href="/stories">Stories</Link>
+          <a href="/partners">Partners</a>
+          <a href="/supporters">Supporters</a>
           <Link href="/gallery">Gallery</Link>
           <Link href="/contact">Contact</Link>
         </div>
@@ -40,6 +42,8 @@ export default function Navbar() {
             <Link href="/about">About</Link>
             <Link href="/work">Our Work</Link>
             <Link href="/stories">Stories</Link>
+            <a href="/partners">Partners</a>
+            <a href="/supporters">Supporters</a>
             <Link href="/gallery">Gallery</Link>
             <Link href="/contact">Contact</Link>
           </div>
