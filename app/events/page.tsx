@@ -5,6 +5,7 @@ export default function EventsPage() {
   return (
     <main className="bg-white">
       {/* ================= PAGE HEADER ================= */}
+
       <section className="bg-blue-900 text-white py-16 text-center">
         <h1 className="text-4xl font-bold">Events & Activities</h1>
 
@@ -22,56 +23,14 @@ export default function EventsPage() {
           subtitle="Programs and activities planned in the near future."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {/* Event Card */}
+        <div className="text-center mt-12">
+          <p className="text-gray-600 text-lg">
+            No upcoming events scheduled at the moment.
+          </p>
 
-          <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-            <Image
-              src="/images/all/Tree plant event.jpeg"
-              alt="Tree Plantation Drive"
-              width={400}
-              height={250}
-              className="w-full h-48 object-cover"
-            />
-
-            <div className="p-6">
-              <h3 className="font-semibold text-lg mb-2 text-black">
-                Tree Plantation Drive
-              </h3>
-
-              <p className="text-gray-600 text-sm mb-2">
-                Community initiative to promote environmental awareness and
-                encourage green living.
-              </p>
-
-              <p className="text-gray-500 text-sm">📅 July 2026</p>
-            </div>
-          </div>
-
-          {/* Another Future Event */}
-
-          <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-            <Image
-              src="/images/all/Womes day celeb 02.jpg"
-              alt="Women empowerment workshop"
-              width={400}
-              height={250}
-              className="w-full h-48 object-cover"
-            />
-
-            <div className="p-6">
-              <h3 className="font-semibold text-lg mb-2 text-black">
-                Women Empowerment Workshop
-              </h3>
-
-              <p className="text-gray-600 text-sm mb-2">
-                Awareness and support program helping women understand their
-                legal rights and opportunities.
-              </p>
-
-              <p className="text-gray-500 text-sm">📅 August 2026</p>
-            </div>
-          </div>
+          <p className="text-gray-500 mt-2">
+            Please check back later for new updates.
+          </p>
         </div>
       </section>
 
@@ -85,6 +44,52 @@ export default function EventsPage() {
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {/* Tree Plantation */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/images/all/Tree plant event.jpeg"
+                alt="Tree Plantation Drive"
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-black">
+                  Tree Plantation Drive
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Community initiative promoting environmental awareness and
+                  encouraging green living.
+                </p>
+              </div>
+            </div>
+
+            {/* Women Empowerment */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/images/all/Womes day celeb 02.jpg"
+                alt="Women empowerment workshop"
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-black">
+                  Women Empowerment Workshop
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Awareness and support program helping women understand their
+                  legal rights and opportunities.
+                </p>
+              </div>
+            </div>
+
             {/* Holi */}
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -131,7 +136,7 @@ export default function EventsPage() {
               </div>
             </div>
 
-            {/* Children Program */}
+            {/* Children Drawing */}
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <Image

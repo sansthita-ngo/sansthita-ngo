@@ -19,6 +19,57 @@ export default function AboutPage() {
       </section>
 
       {/* ================= MISSION ================= */}
+      {/* ================= STUDENT SUPPORT ================= */}
+
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-black">
+              Supporting Education & Young Dreams
+            </h2>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Sansthita supports underprivileged children through educational,
+              cultural, and sports programs. From Independence Day celebrations
+              and drawing classes to fun competitions and festival activities,
+              we create joyful opportunities that inspire confidence and nurture
+              young minds.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Today, nearly 100 students are benefiting from these programs.
+              Through regular engagement, mentorship and community support,
+              Sansthita encourages children to explore their talents and build a
+              brighter future.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Sansthita is always ready to extend a helping hand to those in
+              need. When meritorious students find their dreams limited by
+              financial hardship, the organization stands beside them.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed">
+              Since 2015, Sansthita has provided financial support to poor and
+              meritorious students pursuing higher education. Many of them have
+              successfully completed their studies and secured good jobs. In
+              some cases, our President personally supported students through
+              her own resources, reflecting deep commitment and compassion.
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="relative h-72 w-full">
+            <Image
+              src="/images/all/Rintu khara donation.jpeg"
+              alt="Student supported by Sansthita"
+              fill
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
