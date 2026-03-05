@@ -27,8 +27,8 @@ export default function HomePage() {
       <Hero />
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= WHAT WE DO ================= */}
@@ -133,8 +133,8 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= IMPACT STORIES ================= */}
@@ -168,8 +168,8 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= GALLERY PREVIEW ================= */}
@@ -288,28 +288,28 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= IMPACT SECTION ================= */}
       <ImpactSection />
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= CALL TO ACTION ================= */}
       <CallToAction />
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="flex justify-center py-1">
-        <div className="w-12 h-[1px] bg-gray-300"></div>
+      {/* ================= SECTION DIVIDER ================= */}
+      <div className="py-10 bg-white">
+        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
-
-      {/* ================= SUPPORT SECTION ================= */}
-      <SupportSection />
+      {/* ================= SUPPORT SECTION =================
+      <SupportSection /> */}
     </main>
   );
 }
