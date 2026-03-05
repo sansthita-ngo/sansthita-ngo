@@ -27,12 +27,12 @@ export default function HomePage() {
       <Hero />
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= WHAT WE DO ================= */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-14">
         <div className="max-w-6xl mx-auto px-6">
           <SectionTitle
             title="What We Do"
@@ -133,12 +133,12 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= IMPACT STORIES ================= */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-14">
         <div className="max-w-6xl mx-auto px-6">
           <SectionTitle
             title="Survivor's stories"
@@ -168,12 +168,12 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
       {/* ================= GALLERY PREVIEW ================= */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-14">
         <div className="max-w-6xl mx-auto px-6">
           <SectionTitle
             title="Our Activities"
@@ -288,7 +288,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
@@ -296,7 +296,7 @@ export default function HomePage() {
       <ImpactSection />
 
       {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
 
@@ -304,12 +304,12 @@ export default function HomePage() {
       <CallToAction />
 
       {/* ================= SECTION DIVIDER ================= */}
-      {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-10 bg-white">
+      <div className="py-6 bg-white">
         <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
       </div>
+
       {/* ================= SUPPORT SECTION =================
-      <SupportSection /> */}
+<SupportSection /> */}
     </main>
   );
 }

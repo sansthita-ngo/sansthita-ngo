@@ -32,65 +32,76 @@ export default function SupportersPage() {
   ];
 
   return (
-    <main className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <SectionTitle
-          title="Our Supporters"
-          subtitle="Kind-hearted individuals and families who stand beside Sansthita in our mission."
-        />
+    <main className="bg-white">
+      {/* ================= PAGE HEADER ================= */}
 
-        {/* Gratitude Corner */}
+      <section className="bg-blue-900 text-white py-16 text-center">
+        <h1 className="text-4xl font-bold">Our Supporters</h1>
 
-        <h2 className="text-2xl font-semibold text-center mt-12 mb-6 text-black">
-          Gratitude Corner
-        </h2>
+        <p className="text-gray-200 mt-4 max-w-2xl mx-auto">
+          Individuals and well-wishers whose generosity and encouragement help
+          Sansthita continue its mission of service and compassion.
+        </p>
+      </section>
 
-        {/* Description */}
+      {/* ================= SUPPORTERS CONTENT ================= */}
 
-        <div className="mt-6 space-y-6 text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
-          <p>
-            Many kind-hearted and compassionate individuals stand beside
-            Sansthita in our mission to support vulnerable members of society.
-          </p>
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionTitle
+            title="Gratitude Corner"
+            subtitle="Kind-hearted individuals and families who stand beside Sansthita in our mission."
+          />
 
-          <p>
-            Their encouragement, generosity and moral support help us continue
-            our work even with limited resources.
-          </p>
+          {/* Description */}
 
-          <p>
-            We are especially thankful to a generous couple from Poland who,
-            despite the distance, continue to remember and support the
-            underprivileged members of our society.
-          </p>
+          <div className="mt-6 space-y-6 text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+            <p>
+              Many kind-hearted and compassionate individuals stand beside
+              Sansthita in our mission to support vulnerable members of society.
+            </p>
 
-          <p className="font-medium">
-            Together, we transform compassion into action and hope into reality.
-          </p>
-        </div>
+            <p>
+              Their encouragement, generosity and moral support help us continue
+              our work even with limited resources.
+            </p>
+            <p className="font-semibold">
+              We are especially thankful to a generous couple from Poland who,
+              despite the distance, continue to remember and support the
+              underprivileged members of our society.
+            </p>
 
-        {/* Donor Images */}
+            <p className="font-medium">
+              Together, we transform compassion into action and hope into
+              reality.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
-          {donors.map((donor) => (
-            <div
-              key={donor.name}
-              className="text-center bg-gray-50 rounded-lg p-4 shadow-sm"
-            >
-              <div className="relative w-full h-72 md:h-80 mb-4 bg-white rounded-md flex items-center justify-center">
-                <Image
-                  src={donor.image}
-                  alt={donor.name}
-                  fill
-                  className="object-contain p-2"
-                />
+          {/* Donor Images */}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+            {donors.map((donor) => (
+              <div
+                key={donor.name}
+                className="text-center bg-gray-50 rounded-lg p-4 shadow-sm"
+              >
+                <div className="relative w-full h-72 md:h-80 mb-4 bg-white rounded-md flex items-center justify-center">
+                  <Image
+                    src={donor.image}
+                    alt={donor.name}
+                    fill
+                    className="object-contain p-2"
+                  />
+                </div>
+
+                <p className="text-sm font-medium text-gray-800">
+                  {donor.name}
+                </p>
               </div>
-
-              <p className="text-sm font-medium text-gray-800">{donor.name}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

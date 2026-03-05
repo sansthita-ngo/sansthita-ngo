@@ -40,45 +40,63 @@ export default function PartnersPage() {
   ];
 
   return (
-    <main className="bg-white py-20">
-      <div className="max-w-5xl mx-auto px-6">
-        <SectionTitle
-          title="Our Partners"
-          subtitle="Institutions and organizations that support Sansthita's mission."
-        />
+    <main className="bg-white">
+      {/* ================= PAGE HEADER ================= */}
 
-        {/* Partner List */}
-        <div className="mt-12 space-y-10">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-start gap-6 p-6 border rounded-lg shadow-sm"
-            >
-              {/* Partner Logo */}
-              {partner.image && (
-                <Image
-                  src={partner.image}
-                  alt={partner.name}
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
-              )}
+      <section className="bg-blue-900 text-white py-16 text-center">
+        <h1 className="text-4xl font-bold">Our Partners</h1>
 
-              {/* Partner Information */}
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {partner.name}
-                </h3>
+        <p className="text-gray-200 mt-4 max-w-2xl mx-auto">
+          Institutions and organizations whose support and collaboration help
+          Sansthita continue its mission of serving vulnerable communities.
+        </p>
+      </section>
 
-                <p className="mt-2 text-gray-600 leading-relaxed">
-                  {partner.description}
-                </p>
+      {/* ================= PARTNERS CONTENT ================= */}
+
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <SectionTitle
+            title="Institutional Partners"
+            subtitle="Organizations and institutions that support Sansthita's mission."
+          />
+
+          {/* Partner List */}
+
+          <div className="mt-12 space-y-10">
+            {partners.map((partner, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-start gap-6 p-6 border rounded-lg shadow-sm"
+              >
+                {/* Partner Logo */}
+
+                {partner.image && (
+                  <Image
+                    src={partner.image}
+                    alt={partner.name}
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                )}
+
+                {/* Partner Information */}
+
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {partner.name}
+                  </h3>
+
+                  <p className="mt-2 text-gray-600 leading-relaxed">
+                    {partner.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

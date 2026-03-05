@@ -65,7 +65,7 @@ export default function AboutPage() {
                 src="/images/all/Rintu khara donation.jpeg"
                 alt="Student supported by Sansthita"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-contain rounded-lg shadow-lg bg-gray-100"
               />
             </div>
 
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 src="/images/all/Womes day celeb 02.jpg"
                 alt="Women empowerment event"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-contain rounded-lg shadow-lg bg-gray-100"
               />
             </div>
 
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 src="/images/all/Abused woman saved.jpeg"
                 alt="Support provided to a vulnerable woman"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-contain rounded-lg shadow-lg bg-gray-100"
               />
             </div>
 
@@ -185,7 +185,7 @@ export default function AboutPage() {
                 src="/images/all/Legal.jpeg"
                 alt="Legal support provided by Sansthita"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-contain rounded-lg shadow-lg bg-gray-100"
               />
             </div>
 
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 src="/images/all/Sansthita office and members 01.jpg"
                 alt="Sansthita members meeting"
                 fill
-                className="object-cover rounded-lg shadow-lg"
+                className="object-contain rounded-lg shadow-lg bg-gray-100"
               />
             </div>
 
