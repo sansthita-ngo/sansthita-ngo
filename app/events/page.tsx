@@ -1,0 +1,161 @@
+import Image from "next/image";
+import SectionTitle from "@/components/SectionTitle";
+
+export default function EventsPage() {
+  return (
+    <main className="bg-white">
+      {/* ================= PAGE HEADER ================= */}
+      <section className="bg-blue-900 text-white py-16 text-center">
+        <h1 className="text-4xl font-bold">Events & Activities</h1>
+
+        <p className="text-gray-200 mt-4 max-w-2xl mx-auto">
+          Sansthita organizes community programs, awareness drives, celebrations
+          and support initiatives throughout the year.
+        </p>
+      </section>
+
+      {/* ================= UPCOMING EVENTS ================= */}
+
+      <section className="py-16 max-w-6xl mx-auto px-6">
+        <SectionTitle
+          title="Upcoming Events"
+          subtitle="Programs and activities planned in the near future."
+        />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {/* Event Card */}
+
+          <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/all/Tree plant event.jpeg"
+              alt="Tree Plantation Drive"
+              width={400}
+              height={250}
+              className="w-full h-48 object-cover"
+            />
+
+            <div className="p-6">
+              <h3 className="font-semibold text-lg mb-2 text-black">
+                Tree Plantation Drive
+              </h3>
+
+              <p className="text-gray-600 text-sm mb-2">
+                Community initiative to promote environmental awareness and
+                encourage green living.
+              </p>
+
+              <p className="text-gray-500 text-sm">📅 July 2026</p>
+            </div>
+          </div>
+
+          {/* Another Future Event */}
+
+          <div className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/all/Womes day celeb 02.jpg"
+              alt="Women empowerment workshop"
+              width={400}
+              height={250}
+              className="w-full h-48 object-cover"
+            />
+
+            <div className="p-6">
+              <h3 className="font-semibold text-lg mb-2 text-black">
+                Women Empowerment Workshop
+              </h3>
+
+              <p className="text-gray-600 text-sm mb-2">
+                Awareness and support program helping women understand their
+                legal rights and opportunities.
+              </p>
+
+              <p className="text-gray-500 text-sm">📅 August 2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= PAST EVENTS ================= */}
+
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionTitle
+            title="Past Events"
+            subtitle="Some of the programs and activities conducted by Sansthita."
+          />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {/* Holi */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/images/all/Holi 02.jpg"
+                alt="Holi celebration"
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-black">
+                  Holi Celebration
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Community celebration bringing joy and unity among families
+                  and children.
+                </p>
+              </div>
+            </div>
+
+            {/* Independence Day */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/images/all/Independence day.jpeg"
+                alt="Independence day celebration"
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-black">
+                  Independence Day Program
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Celebrating national pride through community gatherings and
+                  children's activities.
+                </p>
+              </div>
+            </div>
+
+            {/* Children Program */}
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/images/all/Children draw compet 05.jpg"
+                alt="Children drawing competition"
+                width={400}
+                height={250}
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-black">
+                  Children's Drawing Competition
+                </h3>
+
+                <p className="text-gray-600 text-sm">
+                  Creative activities encouraging children to express their
+                  ideas through art.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
