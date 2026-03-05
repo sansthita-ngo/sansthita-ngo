@@ -11,22 +11,22 @@ export default function SupportersPage() {
       name: "Mr. Krishnendu & Mrs. Rupa Gupta",
       image: "/images/all/Krishnendu Rupa.jpeg",
     },
-    { name: "Mr. Subhash Basu", image: "/images/all/subhash.jpeg" },
-    { name: "Mr. Gautam Saha", image: "/images/all/gautam.jpeg" },
-    { name: "Ms. Banani Mukherjee", image: "/images/all/banani.jpeg" },
-    { name: "Mr. Arjan Mukherjee", image: "/images/all/arjan.jpeg" },
-    { name: "Ms. Shampa Mukherjee", image: "/images/all/shampa.jpeg" },
+    { name: "Mr. Subhash Basu", image: "/images/all/Subhash.jpeg" },
+    { name: "Mr. Gautam Saha", image: "/images/all/Gautam.jpeg" },
+    { name: "Ms. Banani Mukherjee", image: "/images/all/Banani.jpeg" },
+    { name: "Mr. Arjan Mukherjee", image: "/images/all/Arjan.jpeg" },
+    { name: "Ms. Shampa Mukherjee", image: "/images/all/Shampa.jpeg" },
     {
       name: "Mr. Prasenjeet & Mrs. Saumi Ray",
-      image: "/images/all/prasenjeet.jpeg",
+      image: "/images/all/Prasenjeet.jpeg",
     },
     {
       name: "Mr. Bidyut & Mrs. Pamira Mandal",
-      image: "/images/all/bidyut.jpeg",
+      image: "/images/all/Bidyut.jpeg",
     },
     {
       name: "A group of Young Legal minds from Howrah",
-      image: "/images/all/legal.jpeg",
+      image: "/images/all/Legal.jpeg",
     },
     { name: "Ms Chitra Ray", image: "/images/all/Chitra.jpeg" },
   ];
@@ -71,13 +71,13 @@ export default function SupportersPage() {
 
         {/* Donor Images */}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
           {donors.map((donor) => (
             <div
               key={donor.name}
               className="text-center bg-gray-50 rounded-lg p-4 shadow-sm"
             >
-              <div className="relative w-full h-40 mb-4 bg-white rounded-md flex items-center justify-center">
+              <div className="relative w-full h-72 md:h-80 mb-4 bg-white rounded-md flex items-center justify-center">
                 <Image
                   src={donor.image}
                   alt={donor.name}
