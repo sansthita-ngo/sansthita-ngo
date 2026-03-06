@@ -78,6 +78,19 @@ export default function EventsPage() {
               duties and responsibilities as responsible citizens of society.
             </p>
           </div>
+
+          {/* {Weekly Drawing Classes} */}
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="font-semibold text-lg mb-2 text-black">
+              Weekly Drawing Classes
+            </h3>
+
+            <p className="text-gray-600 text-sm">
+              Weekly drawing classes conducted for children to nurture
+              creativity, build confidence and encourage positive learning
+              through art and cultural expression.
+            </p>
+          </div>
         </div>
       </section>
 
