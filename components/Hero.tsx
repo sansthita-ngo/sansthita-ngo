@@ -18,13 +18,12 @@ export default function Hero() {
             and Children with Care and Opportunity
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-200 max-w-xl mb-8">
-            Sansthita [Registration No. S/1L/31619] is a registered non-profit
-            organization run primarily by women. The organization stands firmly
-            against violence and injustice while working to empower women and
-            support vulnerable communities.
+          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8">
+            Sansthita is a registered non-profit organization working primarily
+            for oppressed women. We stand against violence and injustice while
+            supporting vulnerable individuals and communities through awareness,
+            education and humanitarian initiatives.
           </p>
-
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <a

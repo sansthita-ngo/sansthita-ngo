@@ -23,14 +23,61 @@ export default function EventsPage() {
           subtitle="Programs and activities planned in the near future."
         />
 
-        <div className="text-center mt-12">
-          <p className="text-gray-600 text-lg">
-            No upcoming events scheduled at the moment.
-          </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {/* Beautician Course */}
 
-          <p className="text-gray-500 mt-2">
-            Please check back later for new updates.
-          </p>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="font-semibold text-lg mb-2 text-black">
+              Skill Development – Beautician Course
+            </h3>
+
+            <p className="text-gray-600 text-sm">
+              A training program designed to help women learn beautician skills
+              and create opportunities for self-employment and financial
+              independence.
+            </p>
+          </div>
+
+          {/* Tailoring Training */}
+
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="font-semibold text-lg mb-2 text-black">
+              Skill Development – Tailoring Training
+            </h3>
+
+            <p className="text-gray-600 text-sm">
+              Tailoring and stitching training program aimed at empowering women
+              with practical skills that can help them generate income and
+              support their families.
+            </p>
+          </div>
+
+          {/* Performing Arts */}
+
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="font-semibold text-lg mb-2 text-black">
+              Art & Cultural Activities – Performing Arts Classes
+            </h3>
+
+            <p className="text-gray-600 text-sm">
+              Cultural and performing arts classes designed to nurture
+              creativity, confidence and artistic expression among children and
+              youth.
+            </p>
+          </div>
+
+          {/* Civic Awareness */}
+
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="font-semibold text-lg mb-2 text-black">
+              Student Development – Civic Awareness Program
+            </h3>
+
+            <p className="text-gray-600 text-sm">
+              Educational sessions helping students understand their rights,
+              duties and responsibilities as responsible citizens of society.
+            </p>
+          </div>
         </div>
       </section>
 

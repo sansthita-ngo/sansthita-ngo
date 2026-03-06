@@ -46,7 +46,7 @@ export default function DonatePage() {
 
           {/* ================= SUGGESTED DONATIONS ================= */}
 
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <h3 className="text-xl font-semibold text-black mb-6">
               Suggested Contribution
             </h3>
@@ -80,7 +80,7 @@ export default function DonatePage() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* ================= DONATION OPTIONS ================= */}
 

@@ -11,92 +11,112 @@ export default function AboutPage() {
             About Sansthita
           </h1>
 
-          <p className="text-lg text-gray-200 mb-2">
-            A voice for the voiceless — standing for justice, dignity and
-            community empowerment.
+          <p className="text-lg text-gray-200">
+            Standing beside oppressed women and vulnerable communities with
+            compassion, courage and commitment.
           </p>
 
-          <p className="text-sm text-gray-300">Established in 2005</p>
+          <p className="text-sm text-gray-300 mt-2">Established in 2005</p>
         </div>
       </section>
 
-      {/* ================= WOMEN PROTECTION ================= */}
+      {/* ================= WHO WE ARE ================= */}
 
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-
           <div className="relative h-72 w-full">
             <Image
               src="/images/all/Womes day celeb 02.jpg"
-              alt="Women empowerment event"
+              alt="Sansthita women empowerment initiative"
               fill
               className="object-cover rounded-lg shadow-lg"
             />
           </div>
 
-          {/* Text */}
-
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-black">
-              Standing for Justice and Dignity
-            </h2>
+            <h2 className="text-3xl font-bold mb-6 text-black">Who We Are</h2>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Since its establishment in 2005, Sansthita has been committed to
-              supporting oppressed and vulnerable women facing violence,
+              Sansthita is a registered non-profit organization dedicated to
+              supporting oppressed and vulnerable women who face violence,
               injustice and social hardship.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              The organization works closely with communities to provide
-              emotional support, legal guidance and protection to women in
-              distress.
+              The organization works closely with local communities to provide
+              protection, guidance and emotional support to individuals who feel
+              helpless or unheard.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              Our mission is to help women regain confidence, dignity and the
-              opportunity to rebuild their lives with safety and respect.
+              Our goal is to restore dignity, safety and confidence so that
+              every woman can rebuild her life with respect and independence.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ================= PROTECTING VULNERABLE WOMEN ================= */}
+      {/* ================= OUR MISSION ================= */}
+
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-black">Our Mission</h2>
+
+          <p className="text-gray-700 leading-relaxed">
+            Our mission is to stand beside oppressed women and vulnerable
+            individuals, offering protection, legal guidance, emotional support
+            and community assistance. Through awareness and grassroots action,
+            we aim to build a society where justice, dignity and compassion
+            prevail.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= OUR VISION ================= */}
+
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-black">Our Vision</h2>
+
+          <p className="text-gray-700 leading-relaxed">
+            Sansthita envisions a society where no woman suffers in silence,
+            where communities stand together against injustice and where every
+            individual is treated with dignity, safety and respect.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= WHAT MAKES US DIFFERENT ================= */}
 
       <section className="bg-gray-50 py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-
           <div>
             <h2 className="text-3xl font-bold mb-6 text-black">
-              Standing Beside the Vulnerable
+              What Makes Sansthita Different
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Sansthita believes that every individual deserves safety, dignity
-              and compassion. Our members work tirelessly to support women
-              facing abuse, domestic violence and social neglect.
+              Sansthita operates at the grassroots level. Our members directly
+              engage with communities, families and local authorities to support
+              those in distress.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              In several cases, Sansthita has helped vulnerable women find
-              temporary shelter and protection until a stable solution could be
-              secured.
+              We maintain strong cooperation with local police and social
+              institutions to ensure safety, justice and protection for
+              vulnerable individuals.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              Through continuous support and guidance, many women have been able
-              to restore their dignity and rebuild their lives.
+              Even with limited resources, our members continue to serve society
+              with dedication and compassion.
             </p>
           </div>
-
-          {/* Image */}
 
           <div className="relative h-72 w-full">
             <Image
               src="/images/all/Abused woman saved.jpeg"
-              alt="Support provided to a vulnerable woman"
+              alt="Helping vulnerable women"
               fill
               className="object-cover rounded-lg shadow-lg"
             />
@@ -104,83 +124,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= CHILDREN PROGRAMS ================= */}
+      {/* ================= OUR JOURNEY ================= */}
 
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-
           <div className="relative h-72 w-full">
             <Image
-              src="/images/all/Children draw compet 03.jpg"
-              alt="Children drawing competition"
+              src="/images/all/Sansthita office and members 01.jpg"
+              alt="Early days of Sansthita"
               fill
               className="object-cover rounded-lg shadow-lg"
             />
           </div>
-
-          {/* Text */}
-
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-black">
-              Supporting Children's Growth
-            </h2>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Sansthita also supports underprivileged children through
-              educational and recreational activities such as drawing
-              competitions, cultural programs and community events.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed">
-              These initiatives encourage creativity, confidence and learning
-              among young minds while creating joyful community experiences.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= EDUCATION SUPPORT ================= */}
-
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-black">
-              Supporting Education
-            </h2>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Since 2015, Sansthita has supported meritorious students from
-              financially challenged backgrounds to pursue higher education.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed">
-              With the help of the organization and its members, many students
-              have successfully completed their studies and secured good jobs,
-              helping improve the future of their families.
-            </p>
-          </div>
-
-          {/* Image */}
-
-          <div className="relative h-72 w-full">
-            <Image
-              src="/images/all/Rintu khara donation.jpeg"
-              alt="Education support provided by Sansthita"
-              fill
-              className="object-cover rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* ================= HUMBLE BEGINNING ================= */}
-
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          {/* Text */}
 
           <div>
             <h2 className="text-3xl font-bold mb-6 text-black">
@@ -199,21 +154,34 @@ export default function AboutPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              Even without a permanent office, the mission of Sansthita
-              continues with unwavering dedication and fearless hearts.
+              The structure may be temporary, but the mission is permanent. With
+              the support of compassionate people, we hope to build a stable
+              place from where we can serve society more effectively.
             </p>
           </div>
+        </div>
+      </section>
+      {/* ================= VIEW OUR WORK ================= */}
 
-          {/* Image */}
+      <section className="bg-gray-50 py-16 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-4 text-black">
+            See Our Work in Action
+          </h2>
 
-          <div className="relative h-72 w-full">
-            <Image
-              src="/images/all/Sansthita office and members 01.jpg"
-              alt="Sansthita members meeting"
-              fill
-              className="object-cover rounded-lg shadow-lg"
-            />
-          </div>
+          <p className="text-gray-700 mb-8">
+            Over the years, Sansthita has supported oppressed women, organized
+            community programs, helped vulnerable individuals and worked closely
+            with local communities. Explore some of our initiatives and
+            activities.
+          </p>
+
+          <a
+            href="/works"
+            className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
+          >
+            View Our Works
+          </a>
         </div>
       </section>
     </main>

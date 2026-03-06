@@ -9,15 +9,14 @@ import CallToAction from "@/components/CallToAction";
 /*
   Homepage Component
   -------------------
+
   Sections included:
 
   1. Hero
-  2. What We Do
-  3. Impact Stories
-  4. Gallery Preview
-  5. Impact Statistics
-  6. Call To Action
-  7. Support / Contact
+  2. Impact Stories
+  3. Gallery Preview
+  4. Impact Statistics
+  5. Call To Action
 */
 
 export default function HomePage() {
@@ -25,112 +24,6 @@ export default function HomePage() {
     <main>
       {/* ================= HERO SECTION ================= */}
       <Hero />
-
-      {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-6 bg-white">
-        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
-      </div>
-
-      {/* ================= WHAT WE DO ================= */}
-      <section className="bg-gray-50 py-14">
-        <div className="max-w-6xl mx-auto px-6">
-          <SectionTitle
-            title="What We Do"
-            subtitle="Sansthita works across multiple areas to support vulnerable communities and empower individuals."
-          />
-
-          {/* Service Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            {/* Women Protection */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image
-                src="/images/women/Womes day celeb 01.jpg"
-                alt="Women empowerment program"
-                width={400}
-                height={250}
-                className="w-full h-40 object-cover"
-              />
-
-              <div className="p-6">
-                <h3 className="font-semibold text-lg mb-3 text-black">
-                  Women Protection
-                </h3>
-
-                <p className="text-gray-600 text-sm">
-                  Supporting women facing domestic violence through legal
-                  guidance, emotional counselling and community support.
-                </p>
-              </div>
-            </div>
-
-            {/* Education */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image
-                src="/images/education/Rintu khara donation.jpeg"
-                alt="Education support program"
-                width={400}
-                height={250}
-                className="w-full h-40 object-cover"
-              />
-
-              <div className="p-6">
-                <h3 className="font-semibold text-lg mb-3 text-black">
-                  Education Programs
-                </h3>
-
-                <p className="text-gray-600 text-sm">
-                  Organizing drawing competitions, cultural activities and
-                  educational support for underprivileged children.
-                </p>
-              </div>
-            </div>
-
-            {/* Relief */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image
-                src="/images/impact/Cloth distribution puja 01.jpg"
-                alt="Community relief distribution"
-                width={400}
-                height={250}
-                className="w-full h-40 object-cover"
-              />
-
-              <div className="p-6">
-                <h3 className="font-semibold text-lg mb-3 text-black">
-                  Community Relief
-                </h3>
-
-                <p className="text-gray-600 text-sm">
-                  Distributing clothes, food and essential supplies to families
-                  in need across different communities.
-                </p>
-              </div>
-            </div>
-
-            {/* Child Development */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image
-                src="/images/children/Children play 01.jpg"
-                alt="Children development activities"
-                width={400}
-                height={250}
-                className="w-full h-40 object-cover"
-              />
-
-              <div className="p-6">
-                <h3 className="font-semibold text-lg mb-3 text-black">
-                  Child Development
-                </h3>
-
-                <p className="text-gray-600 text-sm">
-                  Recreational activities and events that build confidence,
-                  creativity and joy among children.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ================= SECTION DIVIDER ================= */}
       <div className="py-6 bg-white">
@@ -149,21 +42,44 @@ export default function HomePage() {
             <StoryCard
               title="Arpita's Journey"
               image="/images/women/Women violence.jpg"
-              story="Arpita[name changed for privacy] came to Sansthita after facing severe domestic abuse. With legal assistance, emotional support and employment opportunities arranged by our members, she rebuilt her life."
+              story="Arpita [name changed for privacy] came to Sansthita after facing severe domestic abuse. With legal assistance, emotional support and employment opportunities arranged by our members, she rebuilt her life."
             />
 
             <StoryCard
               title="Prerna's Story"
               image="/images/women/Women violence.jpg"
-              story="Prerna[name changed for privacy] faced emotional torture in her marital home and approached Sansthita for help. Our members stood beside her and helped secure a job for her son."
+              story="Prerna [name changed for privacy] faced emotional torture in her marital home and approached Sansthita for help. Our members stood beside her and helped secure a job for her son."
             />
 
             <StoryCard
               title="Asha's Story"
               image="/images/women/Women violence.jpg"
-              story="After being forced out of her home, Asha[name changed for privacy] wandered the streets for several days before Sansthita found her and helped secure a safe shelter."
+              story="After being forced out of her home, Asha [name changed for privacy] wandered the streets for several days before Sansthita found her and helped secure a safe shelter."
             />
           </div>
+        </div>
+      </section>
+      {/* ================= VIEW OUR WORK ================= */}
+
+      <section className="bg-gray-50 py-16 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-4 text-black">
+            See Our Work in Action
+          </h2>
+
+          <p className="text-gray-700 mb-8">
+            Over the years, Sansthita has supported oppressed women, organized
+            community programs, helped vulnerable individuals and worked closely
+            with local communities. Explore some of our initiatives and
+            activities.
+          </p>
+
+          <a
+            href="/works"
+            className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition"
+          >
+            View Our Works
+          </a>
         </div>
       </section>
 
@@ -181,8 +97,6 @@ export default function HomePage() {
           />
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-            {/* Drawing Competition */}
-
             <div>
               <Image
                 src="/images/children/Children draw compet 14.jpg"
@@ -196,8 +110,6 @@ export default function HomePage() {
                 Sansthita.
               </p>
             </div>
-
-            {/* Children Activities */}
 
             <div>
               <Image
@@ -213,8 +125,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Covid Relief */}
-
             <div>
               <Image
                 src="/images/relief/Covid 05.jpg"
@@ -227,8 +137,6 @@ export default function HomePage() {
                 Sansthita distributing relief support during the COVID pandemic.
               </p>
             </div>
-
-            {/* Holi Celebration */}
 
             <div>
               <Image
@@ -243,8 +151,6 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Independence Day */}
-
             <div>
               <Image
                 src="/images/events/Independence day.jpeg"
@@ -258,8 +164,6 @@ export default function HomePage() {
                 children.
               </p>
             </div>
-
-            {/* Tree Plantation */}
 
             <div>
               <Image
@@ -302,14 +206,6 @@ export default function HomePage() {
 
       {/* ================= CALL TO ACTION ================= */}
       <CallToAction />
-
-      {/* ================= SECTION DIVIDER ================= */}
-      <div className="py-6 bg-white">
-        <div className="max-w-6xl mx-auto border-t border-gray-200"></div>
-      </div>
-
-      {/* ================= SUPPORT SECTION =================
-<SupportSection /> */}
     </main>
   );
 }

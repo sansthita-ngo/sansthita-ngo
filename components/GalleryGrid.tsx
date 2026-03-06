@@ -158,14 +158,16 @@ export default function GalleryGrid() {
             className="cursor-pointer rounded-lg overflow-hidden shadow-md bg-white"
             onClick={() => setIndex(i)}
           >
-            {/* Thumbnail Image */}
-            <Image
-              src={`/images/all/${name}`}
-              alt="Sansthita activity"
-              width={400}
-              height={300}
-              className="w-full h-48 object-cover hover:scale-105 transition"
-            />
+            {/* Image Container */}
+            <div className="relative w-full h-48 bg-gray-100 flex items-center justify-center">
+              <Image
+                src={`/images/all/${name}`}
+                alt="Sansthita activity"
+                width={400}
+                height={300}
+                className="max-h-full w-auto object-contain hover:scale-105 transition"
+              />
+            </div>
           </div>
         ))}
       </div>
