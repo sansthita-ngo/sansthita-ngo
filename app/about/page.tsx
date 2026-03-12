@@ -55,34 +55,69 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* ================= OUR MISSION ================= */}
+      {/* ================= HOW SANSTHITA BEGAN ================= */}
 
       <section className="bg-gray-50 py-20">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">Our Mission</h2>
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          {/* Text */}
 
-          <p className="text-gray-700 leading-relaxed">
-            Our mission is to stand beside oppressed women and vulnerable
-            individuals, offering protection, legal guidance, emotional support
-            and community assistance. Through awareness and grassroots action,
-            we aim to build a society where justice, dignity and compassion
-            prevail.
-          </p>
-        </div>
-      </section>
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-black">
+              The Night That Started Sansthita
+            </h2>
 
-      {/* ================= OUR VISION ================= */}
+            <p className="text-gray-700 leading-relaxed mb-4">
+              In the year 2000, it was an ordinary night in Kalindi Housing
+              Estate. Residents were preparing to go to bed just like any other
+              day. Suddenly, everything changed.
+            </p>
 
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-black">Our Vision</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              A heartbreaking scene unfolded before the community — a woman and
+              her two young children were being cruelly forced out of their home
+              by her husband and his relatives, left helpless in the darkness of
+              the night.
+            </p>
 
-          <p className="text-gray-700 leading-relaxed">
-            Sansthita envisions a society where no woman suffers in silence,
-            where communities stand together against injustice and where every
-            individual is treated with dignity, safety and respect.
-          </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              That night, humanity stood up for her. The residents of the
+              community came together and stood firmly by her side. With the
+              help of local residents and the police, the mother and her
+              children were eventually able to return to their home and find
+              shelter.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              What followed was a long struggle to restore her rights and
+              dignity. The fight continued for nearly five years as the
+              community continued to support her.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              During this difficult time, IPS Officer{" "}
+              <strong>Ms. Bharati Ghosh</strong> of Bhawani Bhavan encouraged
+              the residents to form an organization that could support many more
+              oppressed women facing similar situations.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed">
+              Inspired by this guidance, the community came together to create
+              an organization dedicated to justice and dignity. In 2005, that
+              vision became reality when <strong>Sansthita</strong> was
+              officially registered as a human rights organization.
+            </p>
+          </div>
+
+          {/* Image */}
+
+          <div className="relative h-80 w-full">
+            <Image
+              src="/images/all/Group-Gathering.jpeg"
+              alt="Community support for vulnerable woman"
+              fill
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
         </div>
       </section>
 
@@ -159,6 +194,36 @@ export default function AboutPage() {
               place from where we can serve society more effectively.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ================= OUR MISSION ================= */}
+
+      <section className="bg-gray-50 py-20">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-black">Our Mission</h2>
+
+          <p className="text-gray-700 leading-relaxed">
+            Our mission is to stand beside oppressed women and vulnerable
+            individuals, offering protection, legal guidance, emotional support
+            and community assistance. Through awareness and grassroots action,
+            we aim to build a society where justice, dignity and compassion
+            prevail.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= OUR VISION ================= */}
+
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-black">Our Vision</h2>
+
+          <p className="text-gray-700 leading-relaxed">
+            Sansthita envisions a society where no woman suffers in silence,
+            where communities stand together against injustice and where every
+            individual is treated with dignity, safety and respect.
+          </p>
         </div>
       </section>
       {/* ================= VIEW OUR WORK ================= */}

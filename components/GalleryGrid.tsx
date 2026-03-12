@@ -90,6 +90,7 @@ export default function GalleryGrid() {
     "Womes day celeb 03.jpg",
     "Womes day celeb 04.jpg",
     "Womes day celeb 05.jpg",
+    "Group-Gathering.jpeg",
   ];
 
   /*
