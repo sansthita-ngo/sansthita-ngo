@@ -163,12 +163,46 @@ export default function Footer() {
 
       {/* ================= BOTTOM BAR ================= */}
 
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400 pb-4">
         © 2026 Sansthita
         <br />
         A voice for the voiceless
         <br />
         Registration No. S/1L/31619
+      </div>
+      {/* ================= DEVELOPER CONTACT ================= */}
+
+      <div className="border-t border-white/10 text-center text-sm text-gray-400 py-6 space-x-3">
+        <span>Designed and developed by Pritam Das</span>
+
+        <a
+          href="https://impritam.com"
+          className="text-blue-400 hover:text-blue-300 transition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          impritam.com
+        </a>
+
+        <span>|</span>
+
+        <a
+          href="mailto:pritam.aber@gmail.com"
+          className="text-blue-400 hover:text-blue-300 transition"
+        >
+          pritam.aber@gmail.com
+        </a>
+
+        <span>|</span>
+
+        <a
+          href="https://wa.me/916291616198"
+          className="text-green-400 hover:text-green-300 transition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
       </div>
     </footer>
   );
