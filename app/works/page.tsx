@@ -24,13 +24,6 @@ export default function WorksPage() {
     },
 
     {
-      image: "/images/all/Children draw compet 05.jpg",
-      alt: "Children drawing competition",
-      caption:
-        "Weekly drawing competitions organized for children to nurture creativity, confidence and joyful learning.",
-    },
-
-    {
       image: "/images/all/Cloth distribution puja 01.jpg",
       alt: "Cloth distribution program",
       caption:
