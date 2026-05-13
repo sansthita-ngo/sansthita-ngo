@@ -26,17 +26,6 @@ export default function PartnersPage() {
       description:
         "Apollo Hospital has supported Sansthita in organizing health awareness programs and medical initiatives for the community.",
     },
-    {
-      name: "Government Representatives",
-      image: null,
-      description: (
-        <>
-          We sincerely acknowledge the guidance and support of Government
-          Representative <strong>Shri Sujit Basu</strong> and respected
-          Councilor <strong>Smt Suchayita Das</strong>.
-        </>
-      ),
-    },
   ];
 
   return (

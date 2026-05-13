@@ -198,7 +198,7 @@ export default function EventsPage() {
 
             {/* Children Drawing */}
 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            {/* <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <Image
                 src="/images/all/Children draw compet 05.jpg"
                 alt="Children drawing competition"
@@ -217,7 +217,7 @@ export default function EventsPage() {
                   ideas through art.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

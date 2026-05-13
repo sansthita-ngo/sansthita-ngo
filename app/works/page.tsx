@@ -59,13 +59,6 @@ export default function WorksPage() {
     },
 
     {
-      image: "/images/works/Sewing machine donation sujit bose.jpeg",
-      alt: "Sewing machine donation",
-      caption:
-        "Sewing machine donation program supported by Shri Sujit Bose to help women become financially independent through skill development.",
-    },
-
-    {
       image: "/images/works/Bag distribution to children.jpeg",
       alt: "School bag distribution",
       caption:
@@ -112,13 +105,7 @@ export default function WorksPage() {
       caption:
         "Cloth bags distributed among community members to encourage environmentally friendly alternatives to plastic.",
     },
-    // ✅ Added new works
-    {
-      image: "/images/all/president_flower_sujit_basu.jpeg",
-      alt: "President honoring government representative",
-      caption:
-        "Our President presenting a flower bouquet to our respected Mr. Sujit Basu, Government representative.",
-    },
+
     {
       image: "/images/all/young_girl_helping.jpg",
       alt: "Helping those in need",

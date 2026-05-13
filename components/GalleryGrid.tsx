@@ -13,6 +13,11 @@ export default function GalleryGrid() {
   const [index, setIndex] = useState(-1);
 
   const images = [
+    // MLA Images (Top)
+    "sans_new_mla_1.jpeg",
+    "sans_new_mla_2.jpeg",
+    "sans_new_mla_3.jpeg",
+
     "Abused woman saved.jpeg",
     "Child help 01.jpeg",
     "Children draw compet 01.jpg",
@@ -78,7 +83,6 @@ export default function GalleryGrid() {
     "Group-Gathering.jpeg",
 
     // Newly added images
-    "president_flower_sujit_basu.jpeg",
     "young_girl_helping.jpg",
     "santosh_cheque.jpg",
     "member_green_earth1.jpg",
@@ -89,38 +93,65 @@ export default function GalleryGrid() {
   const getCaption = (name: string): string => {
     if (name.includes("Children draw compet"))
       return "Children Drawing Competition";
+
     if (name.includes("Children play"))
       return "Children Recreational Activities";
+
     if (name.includes("Cloth distribution"))
       return "Cloth Distribution for Families";
+
     if (name.includes("Covid")) return "COVID Relief Support";
+
     if (name.includes("Holi")) return "Holi Celebration with Community";
+
     if (name.includes("Rakhi")) return "Rakhi Celebration Program";
+
     if (name.includes("Teacher day")) return "Teacher's Day Celebration";
+
     if (name.includes("Womes day")) return "Women's Day Celebration";
+
     if (name.includes("Tree plant")) return "Tree Plantation Drive";
+
     if (name.includes("Isisar prog")) return "Community Outreach Program";
+
     if (name.includes("Picnic")) return "Community Recreation Event";
+
     if (name.includes("Rintu khara donation"))
       return "Education Support for Student";
+
     if (name.includes("Child help")) return "Helping Children in Need";
+
     if (name.includes("Abused woman"))
       return "Support for Domestic Violence Survivor";
+
     if (name.includes("Independence")) return "Independence Day Celebration";
+
     if (name.includes("Sansthita office")) return "Sansthita Members Meeting";
-    if (name.includes("president_flower_sujit_basu"))
-      return "Our President presenting a flower bouquet to our respected Mr. Sujit Basu, Government representative";
+
     if (name.includes("young_girl_helping"))
       return "Two compassionate young minds extended their hands to support those in need";
+
     if (name.includes("santosh_cheque"))
       return "Mr. Santosh Kumar Mitra presenting a cheque to someone in need";
+
     if (
       name.includes("member_green_earth1") ||
       name.includes("member_green_earth2")
     )
       return "Members take part in the Green Earth Movement drive";
+
     if (name.includes("late_founder"))
       return "We pay homage to our founder Late Santosh Kumar Mitra";
+
+    // MLA Captions
+    if (name.includes("sans_new_mla_1"))
+      return "Sri Mriganka Bhattacharya Rabindra Jayanti Celebration";
+
+    if (name.includes("sans_new_mla_2"))
+      return "Sri Mriganka Bhattacharya Christmas Event";
+
+    if (name.includes("sans_new_mla_3"))
+      return "Sri Mriganka Bhattacharya in Drawing Competition in Sansthita";
 
     return "Sansthita Community Activity";
   };
@@ -140,13 +171,16 @@ export default function GalleryGrid() {
             className="cursor-pointer rounded-lg overflow-hidden shadow-md bg-white"
             onClick={() => setIndex(i)}
           >
-            <div className="relative w-full h-48 bg-gray-100">
+            <div className="relative w-full aspect-square bg-gray-100 overflow-hidden">
               <Image
                 src={`/images/all/${encodeURIComponent(name)}`}
                 alt={getCaption(name)}
                 fill
                 sizes="(max-width:768px) 50vw, (max-width:1024px) 33vw, 25vw"
-                className="object-contain hover:scale-105 transition"
+                className="object-cover hover:scale-105 transition duration-300"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
               />
             </div>
           </div>
