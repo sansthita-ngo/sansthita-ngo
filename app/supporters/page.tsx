@@ -4,7 +4,7 @@ import SectionTitle from "@/components/SectionTitle";
 export default function SupportersPage() {
   const donors = [
     {
-      name: "Mr. Arpan & Mrs. Sayantini Basak",
+      name: "Dr Arpan Kumar Basak and  Dr Sayantani Basak",
       image: "/images/all/Arpan Sayanti.jpeg",
     },
     {
@@ -37,6 +37,10 @@ export default function SupportersPage() {
     {
       name: "Mrs. Satarupa Bhattacherjee & Mr. Ayan Bhattacherjee",
       image: "/images/all/satarup_ayan_bhattacharjee.jpeg",
+    },
+    {
+      name: "Mrs. Keya Basak",
+      image: "/images/all/keya-basak.jpeg",
     },
   ];
 

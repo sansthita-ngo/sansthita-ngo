@@ -81,6 +81,7 @@ export default function GalleryGrid() {
     "Womes day celeb 04.jpg",
     "Womes day celeb 05.jpg",
     "Group-Gathering.jpeg",
+    "keya-basak-christmas.jpeg",
 
     // Newly added images
     "young_girl_helping.jpg",
@@ -152,6 +153,8 @@ export default function GalleryGrid() {
 
     if (name.includes("sans_new_mla_3"))
       return "Sri Mriganka Bhattacharya in Drawing Competition in Sansthita";
+    if (name.includes("keya-basak-christmas"))
+      return "Mrs Keya Basak distributing Christmas gifts among children";
 
     return "Sansthita Community Activity";
   };
